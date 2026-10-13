@@ -53,6 +53,8 @@ evidence. Record the GPU name shown by the script in your README before posting.
 
 ## Local verification
 
+Install dependencies first with `python -m pip install -r requirements.txt`.
+
 CPU-only checks run without CUDA:
 
 ```bash
@@ -99,6 +101,10 @@ libraries. Speedups are specific to the implemented `index_add_` baseline.
 
 ## Correctness
 
+The executed notebook and outputs are retained in
+[Kaggle Version 1](https://www.kaggle.com/code/varunranjit/nvidia-project?scriptVersionId=357899105)
+(currently private; requires owner access).
+
 The Kaggle run passed 45 comparisons against the NumPy reference: three degree
 patterns (all-empty, mixed, and a row with 1,000 neighbors), five feature widths
 (1, 7, 33, 128, 257), and three implementations. Sampling with replacement tests
@@ -130,4 +136,4 @@ For CPU/PyTorch checks locally, run `python validate_correctness.py`.
 - [x] Validate CPU/PyTorch reference agreement locally
 - [x] Run Kaggle GPU benchmarks and edge-case correctness checks
 - [x] Save GPU environment, measured results, CSVs, and plot
-- [ ] Publish the repository to GitHub
+- [x] Publish the repository to GitHub (private)
