@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+results/*.csv
+results/*.png
+!results/feature_sweep_results.csv
+!results/feature_sweep_summary.csv
+!results/feature_sweep_plot.png
+build/
+.DS_Store
+*.zip
+zip/
