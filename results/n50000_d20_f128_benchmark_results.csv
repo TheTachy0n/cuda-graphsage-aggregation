@@ -1,0 +1,5 @@
+implementation,median_ms,edges_per_second
+NumPy CPU,801.0667,1248335.45
+PyTorch index_add,9.4483,105839638.38
+CUDA naive,77.2976,12937006.56
+CUDA coalesced,2.0582,485852004.96
